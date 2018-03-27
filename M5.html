@@ -6,170 +6,162 @@
 		<title>Mission 5</title>
 		<link rel="stylesheet" href="fonts.css" />
 		<style type="text/css">  
-			*{
+			* {
 				padding: 0;
 				margin: 0;
 				outline: 0;
  				border: 0;
 			}
-			body{
-				width:100%;
-			}
-			header{
-				background-color: #5fc0cd;
-				text-align: center;
-				width: 100%;
-				height: 50px;
+			header {
 				position: fixed;
 				top: 0px;
+				width: 100%;
+				height: 50px;
+				text-align: center;
+				background-color: #5fc0cd;
 				z-index: 1;
 			}
-			.toppage{
-				line-height: 50px;
+			.toppage {
 				width: 100%;
-				color: white;
+				line-height: 50px;
+				color: #fff;
 			}
-			.back{
+			.back {
 				float: left;
 				position: fixed;
 				left: 10px;
 				line-height: 50px;
-				color: white;
+				color: #fff;
 			}
-			.bgimg{
+			.bgimg {
 				width: 100%;
 				height: 200px;
 				margin: 30px 0 0 0;
 				background-image: url(img/bg.png);
 				background-size: 100% auto;
-				background-repeat: no-repeat;
-				background-position: top;
 			}
-			.portait{
-				border-radius: 50%;
-				box-shadow: 0 0 0px 5px #aaa inset;
-				transform: scale(0.5);
+			.portait {
 				position: absolute;
 				top: 60px;
 				left: -25px;
+				border-radius: 50%;
+				box-shadow: 0 0 0px 5px #aaa;
+				transform: scale(0.5);
 			}
-			.info{
+			.info {
 				position: absolute;
 				left: 120px;
 				top: 115px;
 			}
-			.name{
-				color: white;
+			.name {
+				color: #fff;
 				font-size: 1rem;
-				letter-spacing: 0.1rem;
+				letter-spacing: .1rem;
 				font-weight: 100;
 				line-height: 2rem;
 			}
-			.age{
-				color: white;
-				font-size: 0.8rem;
+			.age {
+				color: #fff;
+				font-size: .8rem;
 				line-height: 2rem;
 				font-weight: 100;
 			}
-			.location{
-				color: white;
-				font-size: 0.7rem;
+			.location {
+				color: #fff;
+				font-size: .7rem;
 			}
-			.skill{
-				margin: 0px 0px;
-				padding: 0px 5px;
-				border-bottom: 1px solid #999999;
-				font-size: 0.7rem;
+			.skill {
 				height: 45px;
+				padding: 0px 5px;
+				border-bottom: 1px solid #999;
+				font-size: .7rem;
 				line-height: 45px;
 			}
-			.letter{
-				font-size: 0.7rem;
+			.letter {
+				font-size: .7rem;
 				background-color: #5fc0cd;
 				color: #5fc0cd;
 			}
-			.star{
+			.star {
+				height: 45px;
 				margin: 0px 10px;
 				padding: 0px 10px;
-				border-bottom: 1px solid #999999;
-				font-size: 0.7rem;
-				height: 45px;
+				border-bottom: 1px solid #999;
+				font-size: .7rem;
 				line-height: 45px;
 			}
-			p{
+			p {
 				margin: 0 10px;
-				border-bottom: 1px solid #999999;
+				border-bottom: 1px solid #999;
 			}
-			p span{
+			p span {
 				display: inline-block;
-				margin: 15px 0;
+				height: 45px;
 				padding: 0 10px;
-				height: 15px;
-				line-height: 15px;
-				color: #999999;
-				font-size: 0.7rem;
+				line-height: 45px;
+				font-size: .7rem;
+				color: #999;
 			}
-			a{
-				color: #999999;
+			a {
+				color: #999;
 				font-size: 1.2rem;
 			}
-			.black{
-				color: black;
+			.black {
+				color:#000;
 			}
-			.red{
-				color: red;
+			.red {
+				color:#fb0404;
 			}
-			.blank{
-				color: #999999;
+			.blank {
+				padding: 0 4.5px;
 				font-weight: normal;
 				font-size: 1.2rem;
-				padding: 0 4.5px;
+				color: #999;
 			}
-			.box{
+			.box {
 				margin: 10px 10px 90px 10px;
 				padding: 0 0 10 0px;
-				border-bottom: 1px solid #999999;
+				border-bottom: 1px solid #999;
 			}
-			.me{
+			.me {
 				width: 68px;
 				font-weight: normal;
-				font-size: 0.7rem;
-				color: #999999;
-				border-spacing: 0;
+				font-size: .7rem;
+				color: #999;
 			}
-			.text{
-				font-size: 0.7rem;
+			.text {
 				padding: 0 10px;
 				font-weight: normal;
+				font-size: .7rem;
 				text-align: left;
 			}
-			footer{
+			footer {
 				position: fixed;
 				bottom: 0;
 				width: 100%;
 				height: 50px;
-				background-color: white;
 				font-size: 0;
+				background-color: #fff;
 			}
-			.message{
-				border: 1px solid #5fc0cd;
-				border-radius: 5%;
-				margin: 5px 5%;
+			.message {
+			    height: 40px;
 				width: 40%;
-				vertical-align:middle;
-				height: 40px;
-				background-color: white;
+				margin: 5px 5%;	
+				vertical-align: middle;
+				background-color: #fff;
 				color: #5fc0cd;
+				border: 2px solid #5fc0cd;
+				border-radius: 5px;
 			}
-			.call{
-				border: 1px solid white;
-				border-radius: 5%;
-				margin: 5px 5%;
-				width: 40%;
-				vertical-align:middle;
+			.call {
 				height: 40px;
+				width: 40%;
+				margin: 5px 5%;
+				vertical-align: middle;
 				background-color: #5fc0cd;
-				color: white;
+				color: #fff;
+				border: 1px solid #fff;
+				border-radius: 5px;
 			}
 		</style>
 	</head>
@@ -188,14 +180,14 @@
 			<img src="img/portait.png" class="portait"/>
 			<div class="info">
 				<span class="name">
-					赵日天
+					高素雅
 				</span>
 				<span class="age">&nbsp;51&nbsp;岁
 				</span>
 				<br/>
 				<img src="img/location.png" class="locationicon"/>
 				<span class="location">
-					狼牙区.飞虎路.断罪小学
+					北京.通州.果园
 				</span>
 			</div>
 		</div>
@@ -223,15 +215,15 @@
 			<span class="red">25元/小时</span>
 		</p>
 		<div class="box">
-		<table class="sp" cellspacing="0" cellpadding="0">
-			<tbody>
-				<tr>
-					<th class="me">自我介绍</th>
-					<th class="blank">|</th>
-					<th class="text">就我一个别人撒尿给提裤子就我一个别人撒尿给提裤子</th>
-				</tr>
-			</tbody>
-		</table>
+			<table class="sp" cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<th class="me">自我介绍</th>
+						<th class="blank">|</th>
+						<th class="text">可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，</th>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 		<br/>
 		<footer>
