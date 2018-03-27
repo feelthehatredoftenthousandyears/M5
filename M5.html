@@ -4,10 +4,16 @@
 		<meta content="text/html" charset="UTF-8"/>
 		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, 	maximum-scale=1,user-scalable=no"/>
 		<title>Mission 5</title>
+		<link rel="stylesheet" href="fonts.css" />
 		<style type="text/css">  
 			*{
 				padding: 0;
 				margin: 0;
+				outline: 0;
+ 				border: 0;
+			}
+			body{
+				width:100%;
 			}
 			header{
 				background-color: #5fc0cd;
@@ -26,13 +32,14 @@
 			.back{
 				float: left;
 				position: fixed;
+				left: 10px;
 				line-height: 50px;
 				color: white;
 			}
 			.bgimg{
 				width: 100%;
 				height: 200px;
-				margin: 50px 0 0 0;
+				margin: 30px 0 0 0;
 				background-image: url(img/bg.png);
 				background-size: 100% auto;
 				background-repeat: no-repeat;
@@ -41,44 +48,100 @@
 			.portait{
 				border-radius: 50%;
 				box-shadow: 0 0 0px 5px #aaa inset;
-				transform: scale(0.55);
+				transform: scale(0.5);
 				position: absolute;
-				top: 70px;
+				top: 60px;
 				left: -25px;
 			}
 			.info{
 				position: absolute;
-				left: 130px;
+				left: 120px;
 				top: 115px;
 			}
 			.name{
 				color: white;
-				font-size: 1.1rem;
+				font-size: 1rem;
 				letter-spacing: 0.1rem;
 				font-weight: 100;
-				line-height: 3rem;
+				line-height: 2rem;
 			}
 			.age{
 				color: white;
-				font-size: 1rem;
-				line-height: 3rem;
+				font-size: 0.8rem;
+				line-height: 2rem;
 				font-weight: 100;
 			}
 			.location{
 				color: white;
-				font-size: 0.8rem;
+				font-size: 0.7rem;
 			}
 			.skill{
-				margin: 20px 30px;
+				margin: 0px 0px;
+				padding: 0px 5px;
+				border-bottom: 1px solid #999999;
+				font-size: 0.7rem;
+				height: 45px;
+				line-height: 45px;
+			}
+			.letter{
+				font-size: 0.7rem;
+				background-color: #5fc0cd;
+				color: #5fc0cd;
 			}
 			.star{
-				margin: 35px 30px;
+				margin: 0px 10px;
+				padding: 0px 10px;
+				border-bottom: 1px solid #999999;
+				font-size: 0.7rem;
+				height: 45px;
+				line-height: 45px;
 			}
 			p{
-				margin: 35px 30px;
+				margin: 0 10px;
+				border-bottom: 1px solid #999999;
 			}
 			p span{
-				margin: 0 20px;
+				display: inline-block;
+				margin: 15px 0;
+				padding: 0 10px;
+				height: 15px;
+				line-height: 15px;
+				color: #999999;
+				font-size: 0.7rem;
+			}
+			a{
+				color: #999999;
+				font-size: 1.2rem;
+			}
+			.black{
+				color: black;
+			}
+			.red{
+				color: red;
+			}
+			.blank{
+				color: #999999;
+				font-weight: normal;
+				font-size: 1.2rem;
+				padding: 0 4.5px;
+			}
+			.box{
+				margin: 10px 10px 90px 10px;
+				padding: 0 0 10 0px;
+				border-bottom: 1px solid #999999;
+			}
+			.me{
+				width: 68px;
+				font-weight: normal;
+				font-size: 0.7rem;
+				color: #999999;
+				border-spacing: 0;
+			}
+			.text{
+				font-size: 0.7rem;
+				padding: 0 10px;
+				font-weight: normal;
+				text-align: left;
 			}
 			footer{
 				position: fixed;
@@ -114,7 +177,7 @@
 
 	<body>
 		<header>
-			<div class="back"> < 
+			<div class="back">＜
 			</div>
 			<div class="toppage">
 				个人主页
@@ -137,32 +200,44 @@
 			</div>
 		</div>
 		<div class="skill">
-			<span class="letter">|</span>
-			专业技能
+			<span class="letter">\</span>
+			&nbsp;&nbsp;专业技能
 		</div>
 		<div class="star">
-			住家 不含餐
+				<span class="icon-favorite"></span>住家&nbsp;&nbsp; 
+				<span class="icon-favorite"></span>不含餐
 		</div>
 		<p>
 			<span>从业年限</span>
-			<span>0~3年</span>
+			<a>|</a>
+			<span class="black">0~3年</span>
 		</p>
 		<p>
 			<span>工作时间</span>
-			<span>全天</span>
+			<a>|</a>
+			<span class="black">全天</span>
 		</p>
 		<p>
 			<span>服务价格</span>
+			<a>|</a>
 			<span class="red">25元/小时</span>
 		</p>
-		<P>
-			<span>自我介绍</span>
-			<span class="text">就我一个别人撒尿给提裤子就我一个别人撒尿给提裤子就我一个别人撒尿给提裤子就我一个别人撒尿给提裤子就我一个别人撒尿给提裤子就我一个别人撒尿给提裤子就我一个别人撒尿给提裤子就我一个别人撒尿给提裤子就我一个别人撒尿给提裤子</span>
-		</P>
-
+		<div class="box">
+		<table class="sp" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<th class="me">自我介绍</th>
+					<th class="blank">|</th>
+					<th class="text">就我一个别人撒尿给提裤子就我一个别人撒尿给提裤子</th>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+		<br/>
 		<footer>
 			<input type="button" class="message" value="message">
 			<input type="button" class="call" value="call">
 		</footer>
+
 	</body>
 </html>
